@@ -1,2 +1,1 @@
-# Scrum_Ass2_Group2
-# Scrum_Ass2_Group2
+Pet hotel website including booking, discussion and more features
