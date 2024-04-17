@@ -7,80 +7,13 @@ body, h1, h2, p, ul {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #5CDB95; /* Green background */
+    background-color: #ffffff; /* White background */
 }
 
-nav {
-    background: #05386B; /* Dark blue navbar */
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5%;
-}
+/*      part for navbar.css    */
 
-nav .logo img {
-    height: 50px; /* Adjust as needed to align with nav items */
-    vertical-align: middle; /* Aligns img vertically */
-}
 
-nav ul {
-    list-style: none;
-    position: relative;
-    display: flex;
-    align-items: center; /* Ensures nav items are vertically centered */
-}
-
-nav ul li {
-    margin-left: 20px;
-    position: relative;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-    font-size: 16px; /* Adjust based on your preference for nav item font size */
-}
-
-nav ul li:hover .dropdown-content {
-    display: block;
-}
-
-nav .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-nav .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-nav .dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-nav .login button {
-    padding: 9px 25px;
-    background-color: #567;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-nav .login button:hover {
-    background-color: #678;
-}
-
-.welcome, .about {
+.welcome {
     padding: 20px;
     text-align: center;
 }
@@ -89,9 +22,45 @@ nav .login button:hover {
     color: #05386B; /* Text color to match the nav bar for consistency */
 }
 
+.latest-articles, .upcoming-events {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #eaeaea; /* subtle border to visually separate sections */
+}
+
+.latest-articles h2, .upcoming-events h2 {
+    color: #05386B;
+    margin-bottom: 15px;
+}
+
+#articles-container, #events-container {
+    /* Placeholder styles - adjust as content is added */
+    padding: 20px;
+    background-color: #f8f8f8; /* Light background to differentiate from white page background */
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Maintain consistency in the text color for content */
+.latest-articles p, .upcoming-events p {
+    color: #05386B;
+}
+
+/* Additional responsive styling as needed for smaller screens */
+@media (max-width: 768px) {
+    .latest-articles, .upcoming-events {
+        padding: 10px;
+    }
+
+    #articles-container, #events-container {
+        padding: 10px;
+    }
+}
+
+
 footer {
     background: #05386B;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
 }
