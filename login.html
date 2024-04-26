@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo1.jpg" alt="Pet Hotel Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="welcome_page.html">Home</a></li>
+                <li><a href="event_page.html">Event</a></li>
+                <li>
+                    <a href="#">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="cats_page.html">Cats</a>
+                        <a href="dogs_page.html">Dogs</a>
+                        <a href="other_pet_page.html">Other pets</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                    <div class="dropdown-content">
+                        <a href="toys_page">Toys</a>
+                        <a href="food_page.html">Food</a>
+                        <a href="health_page.html">Health</a>
+                    </div>
+                </li>
+                <li class="login"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="login-container">
+        <div class="login-section">
+            <h2>User Login</h2>
+            <form id="user-login">
+                <input type="text" placeholder="Enter Username">
+                <input type="password" placeholder="Enter Password">
+                <label><input type="checkbox"> Remember me</label>
+                <button type="submit">Login</button>
+            </form>
+            <div class="login-links">
+                <a href="forgot_password.html">Forgot Password</a>
+                <a href="sign_up.html">Sign Up</a>
+            </div>
+        </div>
+    
+        <div class="login-section">
+            <h2>Staff Login</h2>
+            <form id="staff-login">
+                <input type="text" id = 'staff-username'placeholder="Enter Username">
+                <input type="password" id = 'staff-pwd'placeholder="Enter Password">
+                <label><input type="checkbox"> Remember me</label>
+                <button type="submit">Login</button>
+            </form>
+            <div class="login-links">
+                <a href="forgot_password.html">Forgot Password</a>
+                <!-- Staff might not have a sign-up option depending on your system -->
+            </div>
+        </div>
+    </div>
+    <script src = 'login.js'></script>
+</body>
+</html>
