@@ -1,38 +1,35 @@
 /* styles.css */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4; /* Adjust to match your site's theme */
     margin: 0;
     padding: 0;
 }
 
-.container {
-    padding: 20px;
-}
-
-.latest-event {
-    background-color: #ffffff; /* Light background to stand out */
-    padding: 20px;
-    margin-bottom: 20px;
-    /* Add more styles to make the latest event stand out */
-}
-
-.event-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Adjust the space between events */
-    overflow-y: auto; /* Allows scrolling if the list is long */
-}
-
 .event {
-    background-color: #ffffff;
     padding: 20px;
-    cursor: pointer; /* Indicates the event is clickable */
-    /* Add more styles for the event card */
+}
+.event ul {
+    padding: 0;
+}
+  
+.event li {
+    list-style: none; /* Removes the default list styling */
 }
 
-.event:hover {
-    background-color: #eaeaea; /* Highlight effect on hover */
+.event a {
+    display: inline-block; /* Allows the size to fit the content */
+    background-color: #ffffff; /* Initial background color */
+    color: #05386B; /* Text color */
+    padding: 10px 15px; /* Adjust padding to your preference */
+    border-radius: 20px; /* Rounded corners for oval shape */
+    margin-top: -50px; /* Space from the event description */
+    transition: background-color 0.3s ease-in-out; /* Transition for hover effect */
+    text-align: left; /* Align text to the left */
+    margin-left: -15px;
+    text-decoration: none; /* Removes the underline */
 }
 
-/* Media queries and responsiveness as needed */
+.event a:hover {
+    background-color: #5CDB95; /* Color when hovered */
+}
+
