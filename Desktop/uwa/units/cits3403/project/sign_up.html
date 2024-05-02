@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="navbar.css">
+    <title>Sign Up</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
     <header>
@@ -36,36 +36,22 @@
             </ul>
         </nav>
     </header>
-    
+
     <div class="login-container">
         <div class="login-section">
-            <h2>Customer Login</h2>
-            <form id="customer-login">
+            <h2>User Sign Up</h2>
+            <form id="user-sign_up">
+                <input type="text" placeholder="Enter ID number to avoid lost (such as email or mobile number)">
                 <input type="text" placeholder="Enter Username">
                 <input type="password" placeholder="Enter Password">
                 <label><input type="checkbox"> Remember me</label>
-                <button type="submit">Login</button>
+                <button type="submit">Sign Up</button>
             </form>
             <div class="login-links">
                 <a href="forgot_password.html">Forgot Password</a>
-                <a href="sign_up.html">Sign Up</a>
-            </div>
-        </div>
-    
-        <div class="login-section">
-            <h2>Staff Login</h2>
-            <form id="staff-login">
-                <input type="text" id = 'staff-username'placeholder="Enter Username">
-                <input type="password" id = 'staff-pwd'placeholder="Enter Password">
-                <label><input type="checkbox"> Remember me</label>
-                <button type="submit">Login</button>
-            </form>
-            <div class="login-links">
-                <a href="forgot_password.html">Forgot Password</a>
-                <!-- Staff might not have a sign-up option depending on your system -->
             </div>
         </div>
     </div>
-    <script src = 'login.js'></script>
+
 </body>
 </html>
