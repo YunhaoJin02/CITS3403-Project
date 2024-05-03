@@ -75,6 +75,14 @@ body {
     text-decoration: none;
 }
 
+
 .login-links a:hover{
     color: purple;
 }
+
+
+
+
+
+/* Add your media queries to handle smaller screens */
+

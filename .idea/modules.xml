@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+ signup_branch
       <module fileurl="file://$PROJECT_DIR$/.idea/project.iml" filepath="$PROJECT_DIR$/.idea/project.iml" />
-    </modules>
-  </component>
-</project>
+
+      <module fileurl="file://$PROJECT_DIR$/.idea/original project.iml" filepath="$PROJECT_DIR$/.idea/original project.iml" />
