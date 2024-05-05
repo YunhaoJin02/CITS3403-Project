@@ -1,4 +1,77 @@
 {
+
+  "events": [
+    {
+      "id": 1,
+      "title": "Border Collie Dogs BBQ",
+      "date": "23-06-2024",
+      "location": "Alexandria Park",
+      "description": "Join us for a fun-filled BBQ with your furry friends at Alexandria Park. There will be plenty of food, games, and activities for Border Collie owners and enthusiasts.",
+      "suitable_for": "Border Collies",
+      "price": 0,
+      "img1":"img/event1_1.jpg" ,
+      "img2":"img/event1_2.jpg"
+      
+    },
+    {
+      "id": 2,
+      "title": "Recharge with Some Floofy Cuddles",
+      "date": "30-06-2024",
+      "location": "UWA Campus",
+      "description": "Having a RUFF day? Enjoy a relaxing afternoon filled with dog cuddles and meet other dog owners.",
+      "suitable_for": "All Dogs",
+      "price": 0,
+      "img1":"img/event2_1.jpg" ,
+      "img2":"img/event2_2.jpg"
+
+    },
+    {
+      "id": 3,
+      "title": "Neutering Cats",
+      "date": "28-07-2024",
+      "location": "City Animal Clinic",
+      "description": "Join us for informative sessions and on-site neutering services by professional veterinarians.",
+      "suitable_for": "All Cats",
+      "price": 0,
+      "img1":"img/event3_1.jpg" ,
+      "img2":"img/event3_2.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Ragdoll Party",
+      "date": "4-08-2024",
+      "location": "Animal Exercise Beach",
+      "description": "Celebrate the charm of Ragdolls at our exclusive Ragdoll Party! There will be activities, grooming tips, and a chance to meet other Ragdoll enthusiasts.",
+      "suitable_for": "Only Ragdolls",
+      "price": 10,
+      "img1":"img/event4_1.jpg" ,
+      "img2":"img/event4_2.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Puppuccino Day",
+      "date": "18-08-2024",
+      "location": "Moonbucks Cafe",
+      "description": "Treat your furry friend to a delicious Puppuccino on us! A fun and frothy event where your dog can enjoy a tasty treat alongside fellow dog lovers.",
+      "suitable_for": "All Dogs",
+      "price": 0,
+      "img1":"img/event5_1.jpg" ,
+      "img2":"img/event5_2.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Vaccinating Your Dog",
+      "date": "01-09-2024",
+      "location": "Veterinary Health Center",
+      "description": "Keep your dog healthy and safe with our vaccination day. Professional vets will be available to provide vaccinations and health checks.",
+      "suitable_for": "All Dogs",
+      "price": 0,
+      "img1":"img/event6_1.jpg" ,
+      "img2":"img/event6_2.jpg"
+    }
+  ]
+}
+
     "events": [
       {
         "title": "Border Collie Dogs BBQ",
