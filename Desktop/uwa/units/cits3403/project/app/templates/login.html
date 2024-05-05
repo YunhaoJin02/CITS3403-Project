@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="static/images/logo1.jpg" alt="Pet Hotel Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('welcome') }}">Home</a></li>
+                <li><a href="{{ url_for('event') }}">Event</a></li>
+                <li>
+                    <a href="#">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('cats') }}">Cats</a>
+                        <a href="{{ url_for('dogs') }}">Dogs</a>
+                        <a href="{{ url_for('other_pets') }}">Other pets</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                    <div class="dropdown-content">
+                        <a href="toys_page">Toys</a>
+                        <a href="food_page.html">Food</a>
+                        <a href="health_page.html">Health</a>
+                    </div>
+                </li>
+                <li class="login"><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="login-container">
+        <div class="login-section">
+            <h2>Customer Login</h2>
+            <form id="customer-login" method="POST" action="{{ url_for('login') }}">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    {{ form.username.label }} {{ form.username(class="form-control") }}
+                    {% for error in form.username.errors %}
+                        <span class="text-danger">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="form-group">
+                    {{ form.password.label }} {{ form.password(class="form-control") }}
+                    {% for error in form.password.errors %}
+                        <span class="text-danger">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="form-group">
+                    {{ form.remember_me }} {{ form.remember_me.label }}
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <div class="login-links">
+                <a href="{{ url_for('forgot_password') }}">Forgot Password</a>
+                <a href="{{ url_for('sign_up') }}">Sign Up</a>
+            </div>
+        </div>
+    
+        <div class="login-section">
+            <h2>Staff Login</h2>
+            <form id="staff-login" method="POST" action="{{ url_for('login') }}">
+                <div class="form-group">
+                    <input type="text" id="staff-username" name="staff_username" placeholder="Enter Username">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="staff-pwd" name="staff_password" placeholder="Enter Password">
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox" name="remember_me"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <div class="login-links">
+                <a href="{{ url_for('forgot_password') }}">Forgot Password</a>
+                <!-- Staff might not have a sign-up option depending on your system -->
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+

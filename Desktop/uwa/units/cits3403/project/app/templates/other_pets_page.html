@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Hotel Booking</title>
+    <link rel="stylesheet" href="static/css/navbar.css">
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <img src="static/images/logo1.jpg" alt="Pet Hotel Logo">
+
+        </div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('welcome') }}">Home</a></li>
+            <li><a href="{{ url_for('event') }}">Event</a></li>
+            <li>
+                <a href="#">Categories</a>
+                <div class="dropdown-content">
+                    <a href="{{ url_for('cats') }}">Cats</a>
+                    <a href="{{ url_for('dogs') }}">Dogs</a>
+                    <a href="{{ url_for('other_pets') }}">Other pets</a>
+                    
+                </div>
+            </li>
+            <li>
+                <a href="#">Products</a>
+                <div class="dropdown-content">
+                    <a href="toys_page">Toys</a>
+                    <a href="food_page.html">Food</a>
+                    <a href="health_page.html">Health</a>
+                    <a href="hotel_page.html">Hotel</a>
+                </div>
+            </li>
+            <li class="login"><a href="/login">Login</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+</body>
+</html>

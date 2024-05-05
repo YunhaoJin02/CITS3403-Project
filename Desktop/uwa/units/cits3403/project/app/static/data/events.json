@@ -1,0 +1,125 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Border Collie Dogs BBQ",
+      "date": "23-06-2024",
+      "location": "Alexandria Park",
+      "description":[
+        {
+          "subheader":"🐾 Come and Celebrate with Us at the Border Collie Dogs BBQ! 🐾",
+          "introduction":"Join us at the scenic Alexandria Park for an unforgettable day of fun, food, and furry friends at our special BBQ event dedicated to Border Collie owners and enthusiasts! Whether you are a long-time Border Collie lover or just curious about this incredible breed, there's something here for everyone.",
+          "highlight1":" Enjoy a wide selection of delicious barbecue favorites, vegetarian options, and delightful treats, all prepared with fresh, locally-sourced ingredients.",
+          "highlight2":"Meet and mingle with other Border Collie owners, share stories and tips, and connect with the vibrant community of dog lovers."
+        }
+      ],
+      "suitable_for": "Border Collies",
+      "price": 0,
+      "img1":"static/images/event1_1.jpg" ,
+      "img2":"static/images/event1_2.jpg",
+      "img3":"static/images/event1_3.jpg",
+      "img4":"static/images/event1_4.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Recharge with Some Floofy Cuddles",
+      "date": "30-06-2024",
+      "location": "UWA Campus",
+      "description": [
+        {
+          "subheader":"Having a RUFF day? Enjoy a relaxing afternoon filled with dog cuddles and meet other dog owners.",
+          "introduction":"Feeling the midweek slump or just need a break from the daily grind? Turn your day around with a relaxing afternoon of dog cuddles at our event! This is your chance to unwind in the company of adorable dogs and connect with fellow dog lovers in a soothing, joyful environment.",
+          "highlight1":"Dive into a sea of soft, warm, and friendly dogs waiting to snuggle with you! Studies show that interacting with animals can reduce stress and increase feelings of happiness. ",
+          "highlight2":"Share stories, tips, and tricks with other dog owners. Whether you’re a seasoned dog owner or thinking about becoming one, this is a perfect opportunity to learn more about the joys and challenges of dog ownership in a casual, friendly setting."
+        }
+      ],
+      "suitable_for": "All Dogs",
+      "price": 0,
+      "img1":"static/images/event2_1.jpg" ,
+      "img2":"static/images/event2_2.jpg",
+      "img3":"static/images/event2_3.jpg",
+      "img4":"static/images/event2_4.jpg"
+
+    },
+    {
+      "id": 3,
+      "title": "Neutering Cats",
+      "date": "28-07-2024",
+      "location": "City Animal Clinic",
+      "description":[
+        {
+          "subheader":"Join us for informative sessions and on-site neutering services by professional veterinarians.",
+          "introduction":"Are you looking to make informed decisions about the health and well-being of your feline friend? Join us for a day dedicated to cat health and responsible pet ownership at our event. This special gathering provides an opportunity to learn from professional veterinarians through informative sessions and to take advantage of on-site neutering services.",
+          "highlight1":"Dive into a series of educational talks hosted by experienced veterinarians and cat specialists. Topics will cover the benefits of neutering, understanding feline behavior, and tips for post-operative care. ",
+          "highlight2":"Utilize our convenient on-site neutering services performed by licensed veterinarians. Neutering is vital for preventing unwanted litters and can contribute to healthier, longer lives for cats."
+        }
+      ],
+      "suitable_for": "All Cats",
+      "price": 0,
+      "img1":"static/images/event3_1.jpg" ,
+      "img2":"static/images/event3_2.jpg",
+      "img3":"static/images/event3_3.jpg",
+      "img4":"static/images/event3_4.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Ragdoll Party",
+      "date": "4-08-2024",
+      "location": "Animal Exercise Beach",
+      "description":[
+        {
+          "subheader":"Celebrate the charm of Ragdolls at our exclusive Ragdoll Party!",
+          "introduction":"Immerse yourself in the delightful world of Ragdoll cats at our exclusive Ragdoll Party! This event is a perfect gathering for all Ragdoll cat owners, enthusiasts, and anyone curious about this beautiful and affectionate breed. Join us for a day filled with fun, learning, and community spirit, all centered around the charming Ragdoll cats.",
+          "highlight1":"Participate in a variety of interactive games and activities designed for you and your Ragdoll. Enjoy photo sessions and more, where you can show off your cat's unique beauty and calm demeanor.",
+          "highlight2":"Learn from the experts with live grooming demonstrations tailored specifically for the Ragdoll’s unique fur needs. Pick up tips on how to keep your cat’s coat looking glossy and healthy, ensuring your Ragdoll is always in top condition."
+        }
+      ],
+      "suitable_for": "Only Ragdolls",
+      "price": 10,
+      "img1":"static/images/event4_1.jpg" ,
+      "img2":"static/images/event4_2.jpg",
+      "img3":"static/images/event4_3.jpg",
+      "img4":"static/images/event4_4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Puppuccino Day",
+      "date": "18-08-2024",
+      "location": "Moonbucks Cafe",
+      "description":[
+        {
+          "subheader":"Treat your furry friend to a delicious Puppuccino on us! A fun and frothy treat for your Furry Friends",
+          "introduction":"Bring your dog along and join us for a delightful Puppccino where your furry friends can indulge in their very own Puppuccino on us! It's a fantastic opportunity to treat your dog to a delicious, dog-friendly version of your favorite coffee treat. Gather with fellow dog lovers and enjoy a day filled with fun, froth, and friendship.",
+          "highlight1":"Each dog gets a complimentary Puppuccino, specially crafted to be safe and enjoyable for dogs. Watch as your pups enjoy their frothy treats in a festive atmosphere!",
+          "highlight2":"Spend quality time with your pet and meet other dog owners. It’s a wonderful chance to socialize, share stories, and make new friends in a relaxed, dog-friendly setting."
+        }
+      ] ,
+      "suitable_for": "All Dogs",
+      "price": 0,
+      "img1":"static/images/event5_1.jpg" ,
+      "img2":"static/images/event5_2.jpg",
+      "img3":"static/images/event5_3.jpg",
+      "img4":"static/images/event5_4.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Vaccinating Your Dog",
+      "date": "01-09-2024",
+      "location": "Veterinary Health Center",
+      "description":[
+        {
+          "subheader":"Keep your dog healthy and safe with our vaccination day. Professional vets will be available to provide vaccinations and health checks.",
+          "introduction":"Join us for a crucial day dedicated to the health and safety of your beloved canine companions. Our 'Free Vaccinating Your Dog' event offers professional veterinary services, including vaccinations and health checks, all at no cost. It is the perfect opportunity to ensure your dog stays healthy and protected against common diseases.",
+          "highlight1":"Take advantage of free vaccinations provided by licensed veterinarians. Protect your dog against various diseases, ensuring they lead a long, healthy life.",
+          "highlight2":"Alongside vaccinations, our veterinarians will conduct basic health checks to assess the overall well-being of your dog. Get professional advice and answers to your health-related questions directly from the experts."
+        }
+      ],
+      "suitable_for": "All Dogs",
+      "price": 0,
+      "img1":"static/images/event6_1.jpg" ,
+      "img2":"static/images/event6_2.jpg",
+      "img3":"static/images/event6_3.jpg",
+      "img4":"static/images/event6_4.jpg"
+    }
+  ]
+}
