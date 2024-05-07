@@ -21,24 +21,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    // Future AJAX call for real authentication (commented out)
-    /*
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/login-endpoint', true);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onreadystatechange = function() {
-        if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-            // Handle successful login
-        } else {
-            // Handle error
-        }
-    };
-    xhr.send('username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(password));
-    */
+    // Function to handle sign-up link click
+    function handleSignUp(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        window.location.href = 'sign_up.html'; // Redirect to sign-up page
+    }
 
     // Attach the event listener to the staff login form
     var staffLoginForm = document.getElementById('staff-login');
     if (staffLoginForm) {
         staffLoginForm.addEventListener('submit', handleStaffLogin);
+    }
+
+    // Attach the event listener to the sign-up link
+    var signUpLink = document.querySelector('.login-links a[href="sign_up.html"]');
+    if (signUpLink) {
+        signUpLink.addEventListener('click', handleSignUp);
     }
 });
