@@ -8,7 +8,7 @@ from flask_login import login_required
 from flask_login import current_user
 from flask_login import login_user
 from app.forms import RegistrationForm, QuestionForm
-
+from app.decorators import login_required
 
 
 
@@ -110,11 +110,20 @@ def event_page():
 
 @app.route('/forum_page')
 def forum_page():
-    return f'forum page'
+    questions = QuestionModel.query.order_by(QuestionModel.create_time.desc()).all()
+    return render_template('forums.html', questions=questions)
+
+@app.route('/question/<int:question_id>')
+def question_details(question_id):
+    # 从数据库获取指定 ID 的问题
+    question = QuestionModel.query.get_or_404(question_id)
+    return render_template('question_details.html', question=question)
+
 
 
 
 @app.route("/public_question", methods=['GET', 'POST'])
+@login_required
 def forum_p_page():
     form = QuestionForm()
     if request.method == 'POST':
