@@ -1,13 +1,13 @@
 from flask import render_template, request, redirect, url_for, flash
 from app import app, db
 from app.forms import LoginForm, StaffLoginForm
-from app.models import UserModel, QuestionModel
+from app.models import UserModel, QuestionModel, AnswerModel
 from flask_mail import Message
 from flask_login import logout_user
 from flask_login import login_required
 from flask_login import current_user
 from flask_login import login_user
-from app.forms import RegistrationForm, QuestionForm
+from app.forms import RegistrationForm, QuestionForm, AnswerForm
 from app.decorators import login_required
 
 
@@ -119,8 +119,24 @@ def question_details(question_id):
     question = QuestionModel.query.get_or_404(question_id)
     return render_template('question_details.html', question=question)
 
+@app.route('/edit_question/<int:question_id>', methods=['GET', 'POST'])
+def edit_question(question_id):
+    question = QuestionModel.query.get_or_404(question_id)
+    if request.method == 'POST':
+        # 更新问题逻辑
+        question.title = request.form['title']
+        question.content = request.form['content']
+        db.session.commit()
+        return redirect(url_for('question_details', question_id=question_id))
+    return render_template('edit_question.html', question=question)
 
-
+@app.route('/delete_question/<int:question_id>', methods=['POST'])
+def delete_question(question_id):
+    question = QuestionModel.query.get_or_404(question_id)
+    db.session.delete(question)
+    db.session.commit()
+    flash('问题已成功删除。')
+    return redirect(url_for('index'))  # 假设你有一个名为 'index' 的路由作为删除后的重定向目标
 
 @app.route("/public_question", methods=['GET', 'POST'])
 @login_required
@@ -141,6 +157,19 @@ def forum_p_page():
                     flash(f"错误在 {fieldName}: {err}")
     return render_template('public_question.html', form=form)
 
-
+@app.route("/answer/public", methods = ['POST'])
+@login_required
+def public_answer():
+    form =AnswerForm(request.form)
+    if form.validate():
+        content = form.content.data
+        question_id = form.question_id.data
+        answer = AnswerModel(content = content , question_id= question_id, author_id = current_user.id )
+        db.session.add(answer)
+        db.session.commit()
+        return redirect(url_for("question_details", question_id = question_id))
+    else:
+        print(form.errors)
+        return redirect(url_for("question_details", question_id=request.form.get("question_id")))
 
 
