@@ -6,7 +6,7 @@ Article Detail
 
 {% block content %}
 <h1>{{ question.title }}</h1>
-<p><strong>Published Date:</strong> {{ question.create_time.strftime('%Y-%m-%d) }}</p>
+<p><strong>Published Date:</strong> {{ question.create_time.strftime('%Y-%m-%d') }}</p>
 <p><strong>Author:</strong> {{ question.author.username }}</p>
 <div class="article-content">
     {{ question.content | safe }}
