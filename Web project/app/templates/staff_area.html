@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Hotel Booking</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <div id = 'welcomePopup' class="welcome-pop">Welcome back, Staff1</div> <!--This should be a dynamic name changing.-->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo1.jpg" alt="Pet Hotel Logo">
+                <a href="staff_info.html" class="staff-name">Staff1</a> <!-- Staff name next to logo !! This should be a dynamic name changing.-->
+            </div>
+            <ul class="nav-links">
+                <li><a href="staff_area.html">Home</a></li>
+                <li><a href="event_page.html">Event</a></li>
+                <li>
+                    <a href="#">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="cats_page.html">Cats</a>
+                        <a href="dogs_page.html">Dogs</a>
+                        <a href="other_pet_page.html">Other pets</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                    <div class="dropdown-content">
+                        <a href="toys_page">Toys</a>
+                        <a href="food_page.html">Food</a>
+                        <a href="health_page.html">Health</a>
+                        <a href="hotel_page.html">Hotel</a>
+                    </div>
+                </li>
+                <li class="login"><a href="login.html" id = 'loginLogoutLink'>Logout</a></li> <!-- Updated to Logout -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome">
+        <h1>Welcome to PetPals Forum</h1>
+        <p>An open community dedicated to pet lovers and owners eager to exchange advice, stories, and experiences. </p>
+        <p>We're committed to fostering a supportive and informative environment for all things pet-related.</p>
+        <img src="img/DogsInPark.jpeg" alt="DogsInPark" style="width: 400px; height: auto;">
+    </section>
+    
+    <section class="latest-articles">
+        <h2>Latest Articles 🗞️</h2>
+        <div id="articles-container">
+            <!-- Placeholder for articles; to be populated with content -->
+            <p>Check back soon for insightful articles on pet care!</p>
+        </div>
+    </section>
+    
+    <section class="upcoming-events">
+        <h2>Upcoming Events 📢</h2>
+        <div id="events-container">
+            <!-- Placeholder for events; to be populated with content -->
+            <p>Stay tuned for exciting upcoming events!</p>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>© 2024 PetPals Forum. All rights reserved.</p>
+    </footer>
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!sessionStorage.getItem('welcomeShown')) {
+                showWelcomePopup();
+            }
+            updateLoginLogoutLink();  // Ensure this is called on page load
+        });
+        
+        function showWelcomePopup() {
+            var popup = document.getElementById('welcomePopup');
+            popup.style.display = 'block'; // Show the popup
+            setTimeout(function() {
+                popup.style.display = 'none'; // Hide after 2 seconds
+            }, 2000);
+            sessionStorage.setItem('welcomeShown', 'true');
+        }
+        
+        function onSuccessfulLogin() {
+            sessionStorage.setItem('isLoggedIn', 'true');
+            updateLoginLogoutLink(); // Update the link immediately after login
+            window.location.href = 'staff_area.html'; // Redirect after login
+        }
+
+        function handleLogout() {
+            sessionStorage.removeItem('isLoggedIn');
+            updateLoginLogoutLink(); // Update the link immediately after logout
+            window.location.href = 'welcome_page.html'; // Redirect after logout
+        }
+
+        
+        function updateLoginLogoutLink() {
+            const loginLogoutLink = document.getElementById('loginLogoutLink');
+            if (loginLogoutLink) { // Check if the element exists to avoid errors
+                if (sessionStorage.getItem('isLoggedIn') === 'true') {
+                    loginLogoutLink.textContent = 'Logout';
+                    loginLogoutLink.href = '#'; // Prevent default link behavior
+                    loginLogoutLink.onclick = function(event) {
+                        event.preventDefault(); // Prevent the default link behavior
+                        handleLogout(); // Call the logout function
+                    };
+                } else {
+                    loginLogoutLink.textContent = 'Login';
+                    loginLogoutLink.href = 'login.html'; // Link to the login page
+                    loginLogoutLink.onclick = null; // Remove any previous onclick event handlers
+                }
+            }
+        }
+
+
+    </script> -->
+        
+        
+        
+        
+        
+        
+</body>
+</html>
